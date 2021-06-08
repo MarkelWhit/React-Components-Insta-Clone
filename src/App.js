@@ -9,6 +9,7 @@ import React, {useState} from 'react';
 // Import the Posts (plural!) and SearchBar components, since they are used inside App component
 // Import the dummyData
 import Posts from "./components/Posts/Posts";
+import SearchBar from './components/SearchBar/SearchBar';
 import dummyData from './dummy-data';
 
 const App = () => {
@@ -44,7 +45,7 @@ const App = () => {
 
   return (
     <div className='App'>
-      
+      <SearchBar />
       <Posts posts={posts} likePost={likePost}/>
       {/* Add SearchBar and Posts here to render them */}
       {/* Check the implementation of each component, to see what props they require, if any! */}
